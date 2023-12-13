@@ -12,9 +12,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test2": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.5",
+    "jest": "^27.5.1"
   }
 }
